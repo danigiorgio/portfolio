@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Soultravel",
+    "description": "Design and development of a website from PSD design, for a travel agency.",
+    "tools": "HTML5, CSS3, JavaScript, Responsive Design.",
+    "img": {
+      "src": "../images/soultravel.png",
+      "alt": "soultravel screenshot"
+    },
+    "url": "https://voirs.github.io/soultravel/",
+    "github": "https://github.com/voirs/soultravel"
+  },
+  {
+    "name": "Around Me",
+    "description": "A React app that finds interesting activities to do in a specified location, utilizing the Yelp API.",
+    "tools": "HTML5, CSS3, React, JavaScript, APIs, Responsive Design.",
+    "img": {
+      "src": "../images/around-me.png",
+      "alt": "around me screenshot"
+    },
+    "url": "https://around-me.now.sh/",
+    "github": "https://github.com/voirs/around-me"
+  },
+  {
+    "name": "Url Shortener",
+    "description": "App that integrates the Rebrand API to minify URL links so they're easier to read.",
+    "tools": "HTML5, CSS3, JavaScript, APIs, Responsive Design.",
+    "img": {
+      "src": "../images/url-shortener.png",
+      "alt": "url shortener screenshot"
+    },
+    "url": "https://voirs.github.io/url-shortener/",
+    "github": "https://github.com/voirs/url-shortener"
+  }
+]
