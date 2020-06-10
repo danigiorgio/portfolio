@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Daniela Giorgio | Frontend Developer`,
-    description: `I am Daniela, and I strive to build beautiful websites through carefully crafted design and creating awesome user experiences.`,
+    description: `I am Daniela, and I like building high performance websites through carefully crafted design and creating awesome user experiences.`,
     author: `Daniela Giorgio`,
-    keywords: `frontend, portfolio, webdev, frontend developer`,
+    keywords: `daniela giorgio, frontend, portfolio, web portfolio, gatsby portfolio, web developer, frontend developer, software engineer, voirs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,13 +31,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
     `babel-plugin-styled-components`,
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby`,
-        short_name: `gatsby`,
+        name: `DanielaGiorgio`,
+        short_name: `DanielaGiorgio`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
