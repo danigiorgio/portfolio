@@ -1,10 +1,13 @@
 <p align="center">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+    <img alt="Portfolio logo" src="./src/images/logo.png" width="70" />
 </p><h1 align="center">
-  ✨ Web Portfolio
-</h1>
+ danielagiorgio.com
+</h1> 
+<p align="center">
+ My personal portfolio, built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.vercel.com/" target="_blank">Vercel.</a>
+</p>
 
-##Tech
+## Tech ✨
 
 - React
 - Gatsby
