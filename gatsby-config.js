@@ -7,6 +7,13 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-169035537-1',
+        head: true,
+      },
+    },
     `gatsby-plugin-styled-components`,
     `babel-plugin-styled-components`,
     {
@@ -53,14 +60,5 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-169035537-1',
-        head: true,
-      },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
   ],
 }
