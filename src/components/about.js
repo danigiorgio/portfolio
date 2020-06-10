@@ -51,7 +51,7 @@ const WavingHand = styled.span`
 
 const About = () => (
   <AboutContainer>
-    <AboutDescription className="animate__animated animate__fadeInDown">
+    <AboutDescription className="animate__animated animate__fadeInUp">
       Hello! <WavingHand role="img" aria-label="waving hand"></WavingHand> I'm
       Daniela Giorgio. I am a <Link to="/#about">frontend developer</Link>,
       based in Buenos Aires, Argentina. Check out my{' '}
