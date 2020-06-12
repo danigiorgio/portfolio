@@ -17,6 +17,7 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     `babel-plugin-styled-components`,
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
