@@ -4,6 +4,7 @@ module.exports = {
     description: `I am Daniela, and I like building high performance websites through carefully crafted design and creating awesome user experiences.`,
     author: `Daniela Giorgio`,
     keywords: `daniela giorgio, frontend, portfolio, web portfolio, gatsby portfolio, web developer, frontend developer, software engineer, voirs`,
+    siteUrl: `https://danielagiorgio.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
