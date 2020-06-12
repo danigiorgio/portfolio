@@ -55,6 +55,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-use-dark-mode`,
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
