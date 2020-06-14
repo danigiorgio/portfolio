@@ -14,7 +14,10 @@ const NavContainer = styled.div`
   padding-top: 10px;
   display: flex;
   justify-content: flex-end;
-  padding-right: 100px;
+  padding-right: 50px;
+  @media (max-width: 600px) {
+    padding-right: 10px;
+  }
 `
 
 const Logo = styled.div`
@@ -50,6 +53,11 @@ const ListItem = styled.li`
   }
 `
 
+const DarkModeToggleContainer = styled.div`
+  padding: 10px;
+  margin-top: 22px;
+`
+
 export default function Header() {
   const data = useStaticQuery(graphql`
     query {
@@ -71,7 +79,8 @@ export default function Header() {
             <Img
               fixed={data.logo.childImageSharp.fixed}
               alt="Logo of letter D"
-              title="Logo" className="logo"
+              title="Logo"
+              className="logo"
             ></Img>
           </Logo>
         </Link>
@@ -84,7 +93,9 @@ export default function Header() {
           </ListItem>
         </List>
 
-        <DarkModeToggle />
+        <DarkModeToggleContainer>
+          <DarkModeToggle />
+        </DarkModeToggleContainer>
       </NavContainer>
 
       <About />
