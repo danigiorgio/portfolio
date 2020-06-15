@@ -5,3 +5,5 @@
  */
 
 require('typeface-work-sans')
+require('typeface-space-mono')
+require('typeface-inter')

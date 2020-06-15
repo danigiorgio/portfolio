@@ -1,6 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FiMail, FiGithub, FiCodepen, FiLinkedin, FiMusic, FiCoffee } from 'react-icons/fi'
+import {
+  FiMail,
+  FiGithub,
+  FiCodepen,
+  FiLinkedin,
+  FiMusic,
+  FiCoffee,
+} from 'react-icons/fi'
 
 const FooterContainer = styled.footer`
   text-align: center;
@@ -10,9 +17,17 @@ const FooterContainer = styled.footer`
 `
 
 const SocialLinks = styled.div`
-  padding-bottom: 1.1rem;
+@media (min-width: 1100px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 60px;
+    }
   svg {
-    font-size: 2.7em;
+    color #555;
+    font-size: 1.1em;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -22,34 +37,44 @@ const SocialLinks = styled.div`
     transition-property: transform;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
+    @media (max-width:1100px) {
+      font-size: 1.4em;
+      margin: 2rem 1rem 0 0;
+      color: #747fe0;
+    }
     :hover {
-      color: #555;
       -webkit-transform: translateY(-8px);
       transform: translateY(-8px);
     }
   }
   a {
-    margin: 0 1.4rem;
-    @media (max-width: 600px) {
-      margin: 0 0.9rem;
-    }
+    margin: 0.9rem 0;   
   }
   span {
     color: #555;
+  }
+  &:after {
+    content: "";
+    width: 1px;
+    height: 90px;
+    background-color: gray;
   }
 `
 
 const CopyRight = styled.p`
   font-size: 0.8em;
+  padding-top: 1rem;
   .gatsby {
     color: #555;
   }
+  svg {
     vertical-align: middle;
+  }
 `
 
 const Footer = () => (
   <FooterContainer>
-    <SocialLinks>
+    <SocialLinks className="social">
       <a
         href="mailto:danielagiorgioe@gmail.com"
         target="_blank"

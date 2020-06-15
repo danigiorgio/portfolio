@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const ContactContainer = styled.section`
-  background-color: #f5f5f5;
   color: #555;
-  padding: 4rem;
+  background: #f5f5f5;
+  padding: 4.5rem;
   @media (max-width: 500px) {
     padding: 2rem;
   }
@@ -13,6 +13,7 @@ const ContactContainer = styled.section`
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -45,28 +46,49 @@ const ContactContainer = styled.section`
   }
   h2 {
     font-size: 1.8em;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.8px;
-    line-height: 30px;
+    text-align: center;
     @media (max-width: 500px) {
-      font-size: 1.2em;
-      line-height: 48px;
+      font-size: 1.5em;
     }
   }
+`
+const ButtonCta = styled.button`
+    font-family: 'Inter';
+    font-size: 1rem;
+    font-weight: 600;
+    -webkit-letter-spacing: .025em;
+    -moz-letter-spacing: .025em;
+    letter-spacing: .025em;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    padding: .5rem 1rem;
+    background-image: linear-gradient(90deg,#7e88ff,#827affbd);
+    box-shadow: 0 2px 8px 0 rgba(0,34,255,.08), 0 2px 8px 0 rgba(0,11,80,.12);
+    &:hover {
+      background-image: linear-gradient(90deg,#827affbd,#7e88ff);
+    }
+}
 `
 
 const Contact = () => (
   <ContactContainer id="contact">
-    <div>
-      <h2>
-        Want to work together?{' '}
-        <a href="malito:danielagiorgioe@gmail.com">Let's talk.</a>
-      </h2>
-      <p>
-        <span className="pulse"></span>I'm currently open to remote
-        opportunities.
-      </p>
-    </div>
+    <h2>Want to work together? </h2>
+    <p>
+      <span className="pulse"></span>I'm currently open to remote opportunities.
+    </p>
+    <a href="malito:danielagiorgioe@gmail.com">
+      {' '}
+      <ButtonCta>Get in touch</ButtonCta>
+    </a>
   </ContactContainer>
 )
 
