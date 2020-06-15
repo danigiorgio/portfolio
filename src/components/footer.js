@@ -1,11 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {
-  IoMdMail,
-  IoLogoGithub,
-  IoLogoCodepen,
-  IoLogoLinkedin,
-} from 'react-icons/io'
+import { FiMail, FiGithub, FiCodepen, FiLinkedin, FiMusic, FiCoffee } from 'react-icons/fi'
 
 const FooterContainer = styled.footer`
   text-align: center;
@@ -49,6 +44,7 @@ const CopyRight = styled.p`
   .gatsby {
     color: #555;
   }
+    vertical-align: middle;
 `
 
 const Footer = () => (
@@ -59,28 +55,28 @@ const Footer = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <IoMdMail title="Email" />
+        <FiMail title="Email" />
       </a>
       <a
         href="https://github.com/voirs"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <IoLogoGithub title="Github" />
+        <FiGithub title="Github" />
       </a>
       <a
         href="https://codepen.io/voirs"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <IoLogoCodepen title="Codepen" />
+        <FiCodepen title="Codepen" />
       </a>
       <a
         href="https://linkedin.com/in/danielagiorgio"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <IoLogoLinkedin title="Linkedin" />
+        <FiLinkedin title="Linkedin" />
       </a>
     </SocialLinks>
     <CopyRight>
@@ -96,11 +92,11 @@ const Footer = () => (
       </a>
       ,{' '}
       <span title="Russian post punk" role="img" aria-label="music note">
-        🎵
+        <FiMusic />
       </span>{' '}
       and{' '}
       <span title="Green tea and coffee" role="img" aria-label="hot beverage">
-        ☕
+        <FiCoffee />
       </span>
     </CopyRight>
   </FooterContainer>

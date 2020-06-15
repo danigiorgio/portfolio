@@ -16,6 +16,7 @@ const ProjectsTitle = styled.h2`
   text-align: center;
   letter-spacing: 0.8px;
   font-weight: 500;
+  color: #555;
   margin: 6rem 0;
   @media (max-width: 600px) {
     margin: 5rem 0;
