@@ -85,7 +85,7 @@ const Contact = () => (
     <p>
       <span className="pulse"></span>I'm currently open to remote opportunities.
     </p>
-    <a href="malito:danielagiorgioe@gmail.com">
+    <a href="malito:hello@danielagiorgio.com">
       {' '}
       <ButtonCta>Get in touch</ButtonCta>
     </a>

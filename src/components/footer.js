@@ -76,7 +76,7 @@ const Footer = () => (
   <FooterContainer>
     <SocialLinks className="social">
       <a
-        href="mailto:danielagiorgioe@gmail.com"
+        href="mailto:hello@danielagiorgio.com"
         target="_blank"
         rel="noopener noreferrer"
       >
