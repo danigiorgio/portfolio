@@ -31,7 +31,7 @@ const AboutDescription = styled.h1`
 `
 
 const WavingHand = styled.span`
-  background-image: url(https://i.imgur.com/qEBvURg.png);
+  background-image: url(https://i.postimg.cc/fT2zTcrh/waving-hand.png);
   width: 30px;
   height: 30px;
   display: inline-block;
