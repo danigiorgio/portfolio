@@ -8,14 +8,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-gtag`,
-      options: {
-        trackingId: `UA-169035537-1`,
-        head: false,
-        anonymize: true,
-      },
-    },
     `gatsby-plugin-styled-components`,
     `babel-plugin-styled-components`,
     `gatsby-plugin-robots-txt`,
