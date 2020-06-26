@@ -64,6 +64,7 @@ const SocialLinks = styled.div`
 const CopyRight = styled.p`
   font-size: 0.8em;
   padding-top: 1rem;
+  margin-bottom: 0;
   .gatsby {
     color: #555;
   }
