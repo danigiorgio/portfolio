@@ -40,6 +40,7 @@
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.7",
     "eslint": "^7.2.0",
+    "gatsby-plugin-goatcounter": "^0.3.1",
     "husky": "^4.2.5",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1"

@@ -12,6 +12,12 @@ module.exports = {
     `babel-plugin-styled-components`,
     `gatsby-plugin-robots-txt`,
     {
+      resolve: `gatsby-plugin-goatcounter`,
+      options: {
+        code: 'voirs',
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `DanielaGiorgio`,
