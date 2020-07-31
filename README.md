@@ -13,3 +13,10 @@
 - Gatsby
 - Styled Components
 - Vercel
+
+## Lighthouse 🚀
+ I achieved all 100's in Chrome Lighthouse Audit!
+ 
+(If you run the audit, do it on incognito without any adblockers)
+    
+<img alt="lighthouse audit" src="./src/images/lh.png">
