@@ -74,8 +74,10 @@ const ImageContainer = styled.div`
   border: 13px solid #fff;
   grid-column: 7 / -3;
   grid-row: 1 / -1;
-  position: relative;
   z-index: 1;
+  &:hover {
+    opacity: 0.8;
+  }
   @media (max-width: 1100px) {
     grid-column: 7 / -1;
     grid-row: 1 / -1;
@@ -154,10 +156,12 @@ const Projects = () => {
                 </Description>
               </StyledContent>
               <ImageContainer className="projects">
-                <Img
-                  fluid={project.img.src.childImageSharp.fluid}
-                  alt={project.img.alt}
-                />
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                  <Img
+                    fluid={project.img.src.childImageSharp.fluid}
+                    alt={project.img.alt}
+                  />
+                </a>
               </ImageContainer>
             </ProjectsCard>
           )

@@ -42,7 +42,7 @@ const SocialLinks = styled.div`
       margin: 2rem 1rem 0 0;
       color: #747fe0;
     }
-    :hover {
+    &:hover {
       -webkit-transform: translateY(-8px);
       transform: translateY(-8px);
     }
