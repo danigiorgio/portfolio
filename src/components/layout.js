@@ -1,18 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
-import Header from './header'
-import Details from './details'
-import Projects from './projects'
-import Contact from './contact'
-import Footer from './footer'
+import { Header, Details, Projects, Contact, Footer } from '@components'
 import styled from 'styled-components'
 import '../styles/global.scss'
 import '../styles/reset.css'
-
-if (typeof window !== 'undefined') {
-  require('smooth-scroll')('a[href*="#"]')
-}
 
 const MainContainer = styled.main`
   padding: 0 3rem;

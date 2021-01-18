@@ -36,6 +36,16 @@ div[role='group'][tabindex] {
   min-height: 100%;
 }
 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
+
 ::selection {
   background-color: rgb(92, 93, 170);
   color: rgb(180, 167, 255);
