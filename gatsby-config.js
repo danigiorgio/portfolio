@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Daniela Giorgio | Frontend Developer`,
-    description: `I am Daniela, and I like building high performance websites through carefully crafted design and creating awesome user experiences.`,
+    description: `I am Daniela Giorgio, a software developer who loves building apps with high performance and focused on the user’s experience.`,
     author: `Daniela Giorgio`,
     keywords: `daniela giorgio, frontend, portfolio, web portfolio, gatsby portfolio, web developer, frontend developer, software engineer, voirs`,
     siteUrl: `https://danielagiorgio.com`,

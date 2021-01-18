@@ -79,7 +79,6 @@ export default function Header() {
             <Img
               fixed={data.logo.childImageSharp.fixed}
               alt="Logo of letter D"
-              title="Logo"
               className="logo"
             ></Img>
           </Logo>
