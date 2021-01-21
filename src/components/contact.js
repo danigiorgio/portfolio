@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import { FiCopy } from 'react-icons/fi'
 
 const ContactContainer = styled.section`
   color: #555;
   background: #f5f5f5;
   padding: 4.5rem;
+  svg {
+    font-size: 14px;
+    cursor: pointer;
+  }
   @media (max-width: 500px) {
     padding: 2rem;
   }
@@ -54,42 +59,41 @@ const ContactContainer = styled.section`
     }
   }
 `
-const ButtonCta = styled.button`
-    font-family: 'Inter';
-    font-size: 1rem;
-    font-weight: 600;
-    -webkit-letter-spacing: .025em;
-    -moz-letter-spacing: .025em;
-    letter-spacing: .025em;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0 auto;
-    padding: .5rem 1rem;
-    background-image: linear-gradient(90deg,#7e88ff,#827affbd);
-    box-shadow: 0 2px 8px 0 rgba(0,34,255,.08), 0 2px 8px 0 rgba(0,11,80,.12);
-    &:hover {
-      background-image: linear-gradient(90deg,#827affbd,#7e88ff);
-    }
+const Email = styled.span`
+    color: #7e88ff;
 }
 `
 
-const Contact = () => (
-  <ContactContainer id="contact">
-    <h2>Want to work together? </h2>
-    <p>
-      <span className="pulse"></span>I'm currently open to remote opportunities.
-    </p>
-    <a href="malito:hello@danielagiorgio.com">
-      {' '}
-      <ButtonCta>Get in touch</ButtonCta>
-    </a>
-  </ContactContainer>
-)
+const Contact = () => {
+  const [copySuccess, setCopySuccess] = useState('')
+
+  const copyToClipBoard = async copyMe => {
+    try {
+      await navigator.clipboard.writeText(copyMe)
+      setCopySuccess('Email address copied!')
+    } catch (err) {
+      setCopySuccess('Failed to copy!')
+    }
+  }
+
+  return (
+    <ContactContainer id="contact">
+      <h2>Want to work together? </h2>
+      <p>
+        <span className="pulse"></span>I'm currently open to remote
+        opportunities.
+      </p>
+      <p>
+        {' '}
+        Drop me a line at <Email>hello@danielagiorgio.com</Email>{' '}
+        <FiCopy
+          onClick={() => copyToClipBoard('hello@danielagiorgio.com')}
+        ></FiCopy>
+      </p>
+
+      {copySuccess}
+    </ContactContainer>
+  )
+}
 
 export default Contact
