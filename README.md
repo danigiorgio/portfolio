@@ -12,7 +12,9 @@
 - React
 - Gatsby
 - Styled Components
-- Vercel
+- Continuous integration with Vercel
+- Goatcounter for analytics
+
 
 ## Lighthouse 🚀
  I achieved all 100's in Chrome Lighthouse Audit!
