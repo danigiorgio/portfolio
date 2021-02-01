@@ -17,16 +17,16 @@ const FooterContainer = styled.footer`
 `
 
 const SocialLinks = styled.div`
-@media (min-width: 1100px) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  right: 60px;
-    }
+  @media (min-width: 1100px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 60px;
+  }
   svg {
-    color #555;
+    color: #555;
     font-size: 1.1em;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -37,7 +37,7 @@ const SocialLinks = styled.div`
     transition-property: transform;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-    @media (max-width:1100px) {
+    @media (max-width: 1100px) {
       font-size: 1.4em;
       margin: 2rem 1rem 0 0;
       color: #747fe0;
@@ -48,13 +48,13 @@ const SocialLinks = styled.div`
     }
   }
   a {
-    margin: 0.9rem 0;   
+    margin: 0.9rem 0;
   }
   span {
     color: #555;
   }
   &:after {
-    content: "";
+    content: '';
     width: 1px;
     height: 90px;
     background-color: gray;
@@ -67,9 +67,6 @@ const CopyRight = styled.p`
   margin-bottom: 0;
   .gatsby {
     color: #555;
-  }
-  svg {
-    vertical-align: middle;
   }
 `
 

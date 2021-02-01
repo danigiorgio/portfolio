@@ -7,7 +7,7 @@ const ContactContainer = styled.section`
   background: #f5f5f5;
   padding: 4.5rem;
   svg {
-    font-size: 14px;
+    font-size: 15px;
     cursor: pointer;
   }
   @media (max-width: 500px) {
@@ -39,7 +39,6 @@ const ContactContainer = styled.section`
   .pulse {
     background-color: #747fe0;
     display: inline-block;
-    vertical-align: middle;
     margin: 0 12px 3px 0;
     width: 10px;
     height: 10px;
@@ -60,8 +59,7 @@ const ContactContainer = styled.section`
   }
 `
 const Email = styled.span`
-    color: #7e88ff;
-}
+  color: #7e88ff;
 `
 
 const Contact = () => {
@@ -87,6 +85,7 @@ const Contact = () => {
         {' '}
         Drop me a line at <Email>hello@danielagiorgio.com</Email>{' '}
         <FiCopy
+          title="Copy email address"
           onClick={() => copyToClipBoard('hello@danielagiorgio.com')}
         ></FiCopy>
       </p>

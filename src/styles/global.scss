@@ -29,6 +29,10 @@ body {
   display: inline-block; // new - for reading order in macOS VO
 }
 
+svg {
+  vertical-align: middle;
+}
+
 /* Forcing gatsby accessibility wrappers to have 100% height*/
 #___gatsby,
 div[role='group'][tabindex] {
@@ -183,7 +187,6 @@ body.light-mode #projects a {
 }
 
 /*dark mode*/
-
 body.dark-mode #contact,
 body.dark-mode footer {
   background: $darker-bg;
