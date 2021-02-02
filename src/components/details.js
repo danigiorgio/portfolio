@@ -1,13 +1,13 @@
-import React from 'react'
-import styled from 'styled-components'
-import { useStaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import styled from 'styled-components';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const DetailsContainer = styled.section`
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
   padding: 10rem 0;
-`
+`;
 
 const Console = styled.div`
   height: 550px;
@@ -20,14 +20,14 @@ const Console = styled.div`
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 30px,
     rgba(0, 0, 0, 0.23) 0px 6px 10px;
-`
+`;
 
 const ConsoleHeader = styled.div`
   background: #cfd8dc;
   height: 20px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-`
+`;
 
 const Button = styled.div`
   width: 10px;
@@ -35,7 +35,7 @@ const Button = styled.div`
   float: left;
   border-radius: 50%;
   margin-left: 5px;
-`
+`;
 
 const Buttons = styled.div`
   float: left;
@@ -50,7 +50,7 @@ const Buttons = styled.div`
   .btn3 {
     background-color: #33c948;
   }
-`
+`;
 const ConsoleContent = styled.div`
   font-family: monospace;
   margin: 1.8rem;
@@ -72,7 +72,7 @@ const ConsoleContent = styled.div`
     -o-animation: blink 1s 8.5s infinite;
     animation: blink 1s 8.5s infinite;
   }
-`
+`;
 
 const Details = () => {
   const data = useStaticQuery(graphql`
@@ -87,7 +87,7 @@ const Details = () => {
         }
       }
     }
-  `)
+  `);
   return (
     <>
       <DetailsContainer id="about">
@@ -124,11 +124,11 @@ const Details = () => {
                 </p>
               </ConsoleContent>
             </Console>
-          )
+          );
         })}
       </DetailsContainer>
     </>
-  )
-}
+  );
+};
 
-export default Details
+export default Details;

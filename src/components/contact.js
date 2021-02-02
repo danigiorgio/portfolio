@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import styled from 'styled-components'
-import { FiCopy } from 'react-icons/fi'
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import { FiCopy } from 'react-icons/fi';
 
 const ContactContainer = styled.section`
   color: #555;
@@ -57,22 +57,22 @@ const ContactContainer = styled.section`
       font-size: 1.5em;
     }
   }
-`
+`;
 const Email = styled.span`
   color: #7e88ff;
-`
+`;
 
 const Contact = () => {
-  const [copySuccess, setCopySuccess] = useState('')
+  const [copySuccess, setCopySuccess] = useState('');
 
   const copyToClipBoard = async copyMe => {
     try {
-      await navigator.clipboard.writeText(copyMe)
-      setCopySuccess('Email address copied!')
+      await navigator.clipboard.writeText(copyMe);
+      setCopySuccess('Email address copied!');
     } catch (err) {
-      setCopySuccess('Failed to copy!')
+      setCopySuccess('Failed to copy!');
     }
-  }
+  };
 
   return (
     <ContactContainer id="contact">
@@ -92,7 +92,7 @@ const Contact = () => {
 
       {copySuccess}
     </ContactContainer>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -4,6 +4,6 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-require('typeface-work-sans')
-require('typeface-space-mono')
-require('typeface-inter')
+require('typeface-work-sans');
+require('typeface-space-mono');
+require('typeface-inter');

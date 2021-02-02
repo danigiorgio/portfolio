@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import useDarkMode from 'use-dark-mode'
-import { FiMoon as Moon, FiSun as Sun } from 'react-icons/fi'
+import React from 'react';
+import styled from 'styled-components';
+import useDarkMode from 'use-dark-mode';
+import { FiMoon as Moon, FiSun as Sun } from 'react-icons/fi';
 
 const ToggleButton = styled.button`
   background: none;
@@ -12,11 +12,11 @@ const ToggleButton = styled.button`
   svg {
     color: #747fe0;
   }
-`
+`;
 
 const DarkModeToggle = () => {
-  const darkMode = useDarkMode(false)
-  const a11yInfo = darkMode.value ? 'Toggle light mode' : 'Toggle dark mode'
+  const darkMode = useDarkMode(false);
+  const a11yInfo = darkMode.value ? 'Toggle light mode' : 'Toggle dark mode';
 
   return (
     <ToggleButton
@@ -26,6 +26,6 @@ const DarkModeToggle = () => {
     >
       {darkMode.value ? <Sun /> : <Moon />}
     </ToggleButton>
-  )
-}
-export default DarkModeToggle
+  );
+};
+export default DarkModeToggle;

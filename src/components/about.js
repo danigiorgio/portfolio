@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
-import 'animate.css'
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
+import 'animate.css';
 
 const AboutContainer = styled.div`
   min-height: calc(80vh - 10px);
@@ -16,7 +16,7 @@ const AboutContainer = styled.div`
   @media (max-width: 600px) {
     padding: 0 2rem;
   }
-`
+`;
 
 const AboutDescription = styled.h1`
   color: #555;
@@ -28,7 +28,7 @@ const AboutDescription = styled.h1`
     font-size: 1.5em;
     line-height: 45px;
   }
-`
+`;
 
 const WavingHand = styled.span`
   background-image: url(https://i.postimg.cc/fT2zTcrh/waving-hand.png);
@@ -47,7 +47,7 @@ const WavingHand = styled.span`
     animation-iteration-count: 5;
     -webkit-animation-fill-mode: both;
   }
-`
+`;
 
 const About = () => (
   <AboutContainer>
@@ -58,6 +58,6 @@ const About = () => (
       <Link to="/#projects">side-projects</Link> below.
     </AboutDescription>
   </AboutContainer>
-)
+);
 
-export default About
+export default About;

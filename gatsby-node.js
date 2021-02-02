@@ -4,8 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-const path = require('path')
-const _ = require('lodash')
+const path = require('path');
+const _ = require('lodash');
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
@@ -18,5 +18,5 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         '@styles': path.resolve(__dirname, 'src/styles'),
       },
     },
-  })
-}
+  });
+};

@@ -1,14 +1,14 @@
-import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
-import Img from 'gatsby-image'
-import DarkModeToggle from './darkmode'
-import About from './about'
-import styled from 'styled-components'
-import 'animate.css'
+import React from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
+import Img from 'gatsby-image';
+import DarkModeToggle from './darkmode';
+import About from './about';
+import styled from 'styled-components';
+import 'animate.css';
 
 const HeaderContainer = styled.header`
   height: 100%;
-`
+`;
 
 const NavContainer = styled.div`
   padding-top: 10px;
@@ -18,7 +18,7 @@ const NavContainer = styled.div`
   @media (max-width: 600px) {
     padding-right: 10px;
   }
-`
+`;
 
 const Logo = styled.div`
   position: absolute;
@@ -30,13 +30,13 @@ const Logo = styled.div`
   @media (max-width: 600px) {
     left: 25px;
   }
-`
+`;
 
 const List = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-`
+`;
 
 const ListItem = styled.li`
   padding: 35px 80px 0 10px;
@@ -51,12 +51,12 @@ const ListItem = styled.li`
   @media (max-width: 600px) {
     padding: 36px 28px 0 6px;
   }
-`
+`;
 
 const DarkModeToggleContainer = styled.div`
   padding: 10px;
   margin-top: 22px;
-`
+`;
 
 export default function Header() {
   const data = useStaticQuery(graphql`
@@ -69,7 +69,7 @@ export default function Header() {
         }
       }
     }
-  `)
+  `);
 
   return (
     <HeaderContainer>
@@ -99,5 +99,5 @@ export default function Header() {
 
       <About />
     </HeaderContainer>
-  )
+  );
 }

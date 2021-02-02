@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import {
   FiMail,
   FiGithub,
@@ -7,14 +7,14 @@ import {
   FiLinkedin,
   FiMusic,
   FiCoffee,
-} from 'react-icons/fi'
+} from 'react-icons/fi';
 
 const FooterContainer = styled.footer`
   text-align: center;
   color: #686868;
   background: #f5f5f5;
   padding-bottom: 1.2rem;
-`
+`;
 
 const SocialLinks = styled.div`
   @media (min-width: 1100px) {
@@ -59,7 +59,7 @@ const SocialLinks = styled.div`
     height: 90px;
     background-color: gray;
   }
-`
+`;
 
 const CopyRight = styled.p`
   font-size: 0.8em;
@@ -68,7 +68,7 @@ const CopyRight = styled.p`
   .gatsby {
     color: #555;
   }
-`
+`;
 
 const Footer = () => (
   <FooterContainer>
@@ -123,6 +123,6 @@ const Footer = () => (
       </span>
     </CopyRight>
   </FooterContainer>
-)
+);
 
-export default Footer
+export default Footer;

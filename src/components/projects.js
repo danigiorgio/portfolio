@@ -1,15 +1,15 @@
-import React from 'react'
-import styled from 'styled-components'
-import Img from 'gatsby-image'
-import { useStaticQuery, graphql } from 'gatsby'
-import { IoLogoGithub } from 'react-icons/io'
+import React from 'react';
+import styled from 'styled-components';
+import Img from 'gatsby-image';
+import { useStaticQuery, graphql } from 'gatsby';
+import { IoLogoGithub } from 'react-icons/io';
 
 const ProjectsContainer = styled.section`
   h3,
   a {
     color: #606bcd;
   }
-`
+`;
 
 const ProjectsTitle = styled.h2`
   font-size: 2em;
@@ -29,7 +29,7 @@ const ProjectsTitle = styled.h2`
     margin-top: 30px;
     width: 50px;
   }
-`
+`;
 
 const StyledContent = styled.div`
   position: relative;
@@ -44,7 +44,7 @@ const StyledContent = styled.div`
     padding: 20px 10px 0px;
     z-index: 5;
   }
-`
+`;
 
 const ProjectName = styled.h3`
   font-size: 1.6em;
@@ -53,7 +53,7 @@ const ProjectName = styled.h3`
   @media (max-width: 600px) {
     margin: 0 24px 10px;
   }
-`
+`;
 
 const ProjectsCard = styled.div`
   display: grid;
@@ -61,7 +61,7 @@ const ProjectsCard = styled.div`
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
   margin-bottom: 100px;
-`
+`;
 
 const ImageContainer = styled.div`
   width: 100%;
@@ -86,7 +86,7 @@ const ImageContainer = styled.div`
     grid-column: 1 / 13;
     grid-row: 1 / -2;
   }
-`
+`;
 
 const Description = styled.div`
   font-size: 0.9em;
@@ -97,7 +97,7 @@ const Description = styled.div`
     vertical-align: -0.165em;
     margin-left: 8px;
   }
-`
+`;
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -122,7 +122,7 @@ const Projects = () => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
@@ -164,11 +164,11 @@ const Projects = () => {
                 </a>
               </ImageContainer>
             </ProjectsCard>
-          )
+          );
         })}
       </ProjectsContainer>
     </>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
