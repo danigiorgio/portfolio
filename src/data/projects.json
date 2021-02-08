@@ -7,7 +7,7 @@
       "src": "../images/soultravel.png",
       "alt": "soultravel screenshot"
     },
-    "url": "https://voirs.github.io/soultravel/",
+    "url": "https://soultravel.vercel.app//",
     "github": "https://github.com/voirs/soultravel"
   },
   {
@@ -20,16 +20,5 @@
     },
     "url": "https://around-me.now.sh/",
     "github": "https://github.com/voirs/around-me"
-  },
-  {
-    "name": "Url Shortener",
-    "description": "App that integrates the Rebrand API to minify URL links so they're easier to read.",
-    "tools": "HTML5, CSS3, JavaScript, APIs, Responsive Design.",
-    "img": {
-      "src": "../images/url-shortener.png",
-      "alt": "url shortener screenshot"
-    },
-    "url": "https://voirs.github.io/url-shortener/",
-    "github": "https://github.com/voirs/url-shortener"
   }
 ]
