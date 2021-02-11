@@ -21,4 +21,4 @@
  
 (If you run the audit, do it on incognito without any adblockers)
     
-<img alt="lighthouse audit" src="./src/images/lh.png">
+<img alt="lighthouse audit" src="./.github/images/lh.png">
