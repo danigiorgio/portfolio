@@ -104,6 +104,7 @@ const Projects = () => {
     query {
       allProjectsJson {
         nodes {
+          id
           name
           description
           tools
@@ -128,44 +129,37 @@ const Projects = () => {
     <>
       <ProjectsContainer id="projects" className="projects">
         <ProjectsTitle>Works</ProjectsTitle>
-        {data.allProjectsJson.nodes.map((project, index) => {
-          return (
-            <ProjectsCard key={project.name + index}>
-              <StyledContent>
-                <ProjectName>{project.name}</ProjectName>
-                <Description>
-                  <p>{project.description}</p>
-                  <p>Tools: {project.tools}</p>
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Demo
-                  </a>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <IoLogoGithub className="ion-github" title="Github" />
-                    <span className="screen-reader-only">
-                      Github (Opens in a new window)
-                    </span>
-                  </a>
-                </Description>
-              </StyledContent>
-              <ImageContainer className="projects">
+        {data.allProjectsJson.nodes.map(project => (
+          <ProjectsCard key={project.id}>
+            <StyledContent>
+              <ProjectName>{project.name}</ProjectName>
+              <Description>
+                <p>{project.description}</p>
+                <p>Tools: {project.tools}</p>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
-                  <Img
-                    fluid={project.img.src.childImageSharp.fluid}
-                    alt={project.img.alt}
-                  />
+                  View Demo
                 </a>
-              </ImageContainer>
-            </ProjectsCard>
-          );
-        })}
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <IoLogoGithub className="ion-github" title="Github" />
+                  <span className="screen-reader-only">
+                    Github (Opens in a new window)
+                  </span>
+                </a>
+              </Description>
+            </StyledContent>
+            <ImageContainer className="projects">
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
+                <Img
+                  fluid={project.img.src.childImageSharp.fluid}
+                  alt={project.img.alt}
+                />
+              </a>
+            </ImageContainer>
+          </ProjectsCard>
+        ))}
       </ProjectsContainer>
     </>
   );

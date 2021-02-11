@@ -1,9 +1,9 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
+import styled from 'styled-components';
 import DarkModeToggle from './darkmode';
 import About from './about';
-import styled from 'styled-components';
 import 'animate.css';
 
 const HeaderContainer = styled.header`
@@ -80,7 +80,7 @@ export default function Header() {
               fixed={data.logo.childImageSharp.fixed}
               alt="Logo of letter D"
               className="logo"
-            ></Img>
+            />
           </Logo>
         </Link>
         <List>

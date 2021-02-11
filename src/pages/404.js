@@ -1,6 +1,6 @@
 import React from 'react';
-import SEO from '../components/seo';
 import styled from 'styled-components';
+import SEO from '../components/seo';
 
 const Wrapper = styled.div`
   align-items: center;
@@ -15,7 +15,8 @@ const NotFoundPage = () => (
     <SEO title="404: Not found" />
     <h1>NOT FOUND</h1>
     <p>
-      You just hit a route that doesn't exist! Go back <a href="/">home.</a>
+      You just hit a route that doesn&apos;t exist! Go back
+      <a href="/">home.</a>
     </p>
   </Wrapper>
 );

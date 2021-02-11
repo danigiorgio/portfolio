@@ -78,16 +78,15 @@ const Contact = () => {
     <ContactContainer id="contact">
       <h2>Want to work together? </h2>
       <p>
-        <span className="pulse"></span>I'm currently open to remote
-        opportunities.
+        <span className="pulse" />
+        I&apos;m currently open to remote opportunities.
       </p>
       <p>
-        {' '}
         Drop me a line at <Email>hello@danielagiorgio.com</Email>{' '}
         <FiCopy
           title="Copy email address"
           onClick={() => copyToClipBoard('hello@danielagiorgio.com')}
-        ></FiCopy>
+        />
       </p>
 
       {copySuccess}

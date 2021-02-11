@@ -46,16 +46,17 @@ const WavingHand = styled.span`
     animation: wave 0.3s;
     animation-iteration-count: 5;
     -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
   }
 `;
 
 const About = () => (
   <AboutContainer>
     <AboutDescription className="animate__animated animate__fadeInUp">
-      Hello! <WavingHand role="img" aria-label="waving hand"></WavingHand> I'm
-      Daniela Giorgio. I am a <Link to="/#about">frontend developer</Link>,
-      based in Buenos Aires, Argentina. Check out my{' '}
-      <Link to="/#projects">side-projects</Link> below.
+      Hello! <WavingHand role="img" aria-label="waving hand" /> I&apos;m Daniela
+      Giorgio. I am a <Link to="/#about">frontend developer</Link>, based in
+      Buenos Aires, Argentina. Check out my
+      <Link to="/#projects"> side-projects</Link> below.
     </AboutDescription>
   </AboutContainer>
 );

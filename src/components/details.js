@@ -79,6 +79,7 @@ const Details = () => {
     query {
       allDetailsJson {
         nodes {
+          id
           location
           email
           resume
@@ -91,41 +92,39 @@ const Details = () => {
   return (
     <>
       <DetailsContainer id="about">
-        {data.allDetailsJson.nodes.map((detail, index) => {
-          return (
-            <Console key={detail + index} className="console">
-              <ConsoleHeader>
-                <Buttons>
-                  <Button className="btn1"></Button>
-                  <Button className="btn2"></Button>
-                  <Button className="btn3"></Button>
-                </Buttons>
-              </ConsoleHeader>
+        {data.allDetailsJson.nodes.map(detail => (
+          <Console key={detail.id} className="console">
+            <ConsoleHeader>
+              <Buttons>
+                <Button className="btn1" />
+                <Button className="btn2" />
+                <Button className="btn3" />
+              </Buttons>
+            </ConsoleHeader>
 
-              <ConsoleContent>
-                <p>&gt; Daniela.currentLocation</p>
-                <p>{detail.location}</p>
-                <p>&gt; Daniela.contactInfo</p>
-                <p>{detail.email}</p>
-                <p>&gt; Daniela.resume</p>
+            <ConsoleContent>
+              <p>&gt; Daniela.currentLocation</p>
+              <p>{detail.location}</p>
+              <p>&gt; Daniela.contactInfo</p>
+              <p>{detail.email}</p>
+              <p>&gt; Daniela.resume</p>
 
-                <p>
-                  <a href="resume.pdf" className="resume">
-                    {detail.resume}
-                  </a>
-                </p>
+              <p>
+                <a href="resume.pdf" className="resume">
+                  {detail.resume}
+                </a>
+              </p>
 
-                <p>&gt; Daniela.skills</p>
-                <p>{detail.skills}</p>
-                <p>&gt; Daniela.interests</p>
-                <p>{detail.interests}</p>
-                <p>
-                  &gt;<span className="cursor"> _</span>
-                </p>
-              </ConsoleContent>
-            </Console>
-          );
-        })}
+              <p>&gt; Daniela.skills</p>
+              <p>{detail.skills}</p>
+              <p>&gt; Daniela.interests</p>
+              <p>{detail.interests}</p>
+              <p>
+                &gt;<span className="cursor"> _</span>
+              </p>
+            </ConsoleContent>
+          </Console>
+        ))}
       </DetailsContainer>
     </>
   );
