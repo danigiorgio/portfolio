@@ -104,6 +104,7 @@ const Projects = () => {
     query {
       allProjectsJson {
         nodes {
+          id
           name
           description
           tools
@@ -128,7 +129,7 @@ const Projects = () => {
     <>
       <ProjectsContainer id="projects" className="projects">
         <ProjectsTitle>Works</ProjectsTitle>
-        {data.allProjectsJson.nodes.map(project => (
+        {data.allProjectsJson.nodes.map((project, id) => (
           <ProjectsCard key={project.id}>
             <StyledContent>
               <ProjectName>{project.name}</ProjectName>

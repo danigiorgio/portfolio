@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "name": "Soultravel",
     "description": "Design and development of a website from PSD design, for a travel agency.",
     "tools": "HTML5, CSS3, JavaScript, Responsive Design.",
@@ -12,7 +11,6 @@
     "github": "https://github.com/voirs/soultravel"
   },
   {
-    "id": 2,
     "name": "Around Me",
     "description": "A React app that finds interesting activities to do in a specified location, utilizing the Yelp API.",
     "tools": "HTML5, CSS3, React, JavaScript, APIs, Responsive Design.",
