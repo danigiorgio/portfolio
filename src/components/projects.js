@@ -104,7 +104,6 @@ const Projects = () => {
     query {
       allProjectsJson {
         nodes {
-          id
           name
           description
           tools
