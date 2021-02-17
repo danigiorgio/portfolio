@@ -33,8 +33,8 @@
 
 ### Pre requirements
 
- Git <br />
- Yarn or Npm <br />
+ - Git 
+ - Yarn or Npm 
 
 1.  **Install the Gatsby CLI**
 
