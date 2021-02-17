@@ -61,7 +61,7 @@ The site is now running at http://localhost:8000!
 $ yarn build
 ```
 
-1. **Preview the site as it will appear once deployed**
+2. **Preview the site as it will appear once deployed**
 
 ```
 $ yarn serve
