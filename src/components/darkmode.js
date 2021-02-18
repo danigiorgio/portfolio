@@ -22,8 +22,7 @@ const DarkModeToggle = () => {
     <ToggleButton
       aria-label={a11yInfo}
       title={a11yInfo}
-      onClick={darkMode.toggle}
-    >
+      onClick={darkMode.toggle}>
       {darkMode.value ? <Sun /> : <Moon />}
     </ToggleButton>
   );

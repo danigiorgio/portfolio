@@ -76,29 +76,25 @@ const Footer = () => (
       <a
         href="mailto:hello@danielagiorgio.com"
         target="_blank"
-        rel="noopener noreferrer"
-      >
+        rel="noopener noreferrer">
         <FiMail title="Email" />
       </a>
       <a
         href="https://github.com/voirs"
         target="_blank"
-        rel="noopener noreferrer"
-      >
+        rel="noopener noreferrer">
         <FiGithub title="Github" />
       </a>
       <a
         href="https://codepen.io/voirs"
         target="_blank"
-        rel="noopener noreferrer"
-      >
+        rel="noopener noreferrer">
         <FiCodepen title="Codepen" />
       </a>
       <a
         href="https://linkedin.com/in/danielagiorgio"
         target="_blank"
-        rel="noopener noreferrer"
-      >
+        rel="noopener noreferrer">
         <FiLinkedin title="Linkedin" />
       </a>
     </SocialLinks>
@@ -109,8 +105,7 @@ const Footer = () => (
         className="gatsby"
         href="https://gatsbyjs.org"
         target="_blank"
-        rel="noopener noreferrer"
-      >
+        rel="noopener noreferrer">
         Gatsby
       </a>
       ,{' '}
