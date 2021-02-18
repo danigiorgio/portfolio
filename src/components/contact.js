@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import { FiCopy } from 'react-icons/fi';
+import styled from 'styled-components';
 
 const ContactContainer = styled.section`
   color: #555;

@@ -5,6 +5,7 @@ import { About, Header, Projects, Contact, Footer } from '@components';
 import styled from 'styled-components';
 import '../styles/global.scss';
 import '../styles/reset.css';
+import Posts from './posts';
 
 const MainContainer = styled.main`
   padding: 0 3rem;
@@ -33,6 +34,7 @@ const Layout = ({ children }) => {
         {children}
         <About />
         <Projects />
+        <Posts />
       </MainContainer>
       <Contact />
       <Footer />

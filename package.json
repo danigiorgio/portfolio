@@ -13,11 +13,14 @@
     "url": "https://github.com/voirs/portfolio"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
     "animate.css": "^4.1.0",
-    "gatsby": "^2.23.3",
+    "gatsby": "2.25.0",
     "gatsby-cli": "^2.19.1",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-manifest": "^2.2.39",
+    "gatsby-plugin-mdx": "^1.10.0",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-robots-txt": "^1.5.1",
