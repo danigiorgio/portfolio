@@ -1,5 +1,27 @@
 [
   {
+    "name": "Evently",
+    "description": "A React app for creating and visualizing events, using Json-Server as a full fake REST API to store them.",
+    "tools": "React, Json-Server, Styled Components, React-bootstrap",
+    "img": {
+      "src": "../images/evently.png",
+      "alt": "evently screenshot"
+    },
+    "url": "https://evently.vercel.app/",
+    "github": "https://github.com/voirs/evently"
+  },
+  {
+    "name": "Around Me",
+    "description": "A React app that finds interesting activities to do in a specified location, utilizing the Yelp API.",
+    "tools": "React, JavaScript, CSS3, Yelp & Google API, Responsive Design.",
+    "img": {
+      "src": "../images/around-me.png",
+      "alt": "around me screenshot"
+    },
+    "url": "https://around-me.now.sh/",
+    "github": "https://github.com/voirs/around-me"
+  },
+  {
     "name": "Soultravel",
     "description": "Design and development of a website from PSD design, for a travel agency.",
     "tools": "HTML5, CSS3, JavaScript, Responsive Design.",
@@ -7,18 +29,18 @@
       "src": "../images/soultravel.png",
       "alt": "soultravel screenshot"
     },
-    "url": "https://soultravel.vercel.app//",
+    "url": "https://soultravel.vercel.app/",
     "github": "https://github.com/voirs/soultravel"
   },
   {
-    "name": "Around Me",
-    "description": "A React app that finds interesting activities to do in a specified location, utilizing the Yelp API.",
-    "tools": "HTML5, CSS3, React, JavaScript, APIs, Responsive Design.",
+    "name": "Portfolio",
+    "description": "This very website you're looking at. ✨",
+    "tools": "React, Gatsby, GraphQL, Styled Components, SCSS.",
     "img": {
-      "src": "../images/around-me.png",
-      "alt": "around me screenshot"
+      "src": "../images/portfolio.png",
+      "alt": "portfolio screenshot"
     },
-    "url": "https://around-me.now.sh/",
-    "github": "https://github.com/voirs/around-me"
+    "url": "https://danielagiorgio/",
+    "github": "https://github.com/voirs/portfolio"
   }
 ]

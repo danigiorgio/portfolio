@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from 'react';
 import { IoLogoGithub } from 'react-icons/io';
+import styled from 'styled-components';
 
 const ProjectsContainer = styled.section`
   h3,
@@ -115,7 +115,7 @@ const Projects = () => {
             src {
               childImageSharp {
                 fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                  ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }
