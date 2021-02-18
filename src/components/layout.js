@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
-import { Header, Details, Projects, Contact, Footer } from '@components';
+import { About, Header, Projects, Contact, Footer } from '@components';
 import styled from 'styled-components';
 import '../styles/global.scss';
 import '../styles/reset.css';
@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <MainContainer>
         {children}
-        <Details />
+        <About />
         <Projects />
       </MainContainer>
       <Contact />
