@@ -49,9 +49,8 @@ const StyledContent = styled.div`
 const ProjectName = styled.h3`
   font-size: 1.6em;
   font-weight: 300;
-  margin: 0 24px 20px;
   @media (max-width: 600px) {
-    margin: 0 24px 10px;
+    margin: 0 0 10px;
   }
 `;
 
@@ -92,7 +91,6 @@ const Description = styled.div`
   font-size: 0.9em;
   position: relative;
   z-index: 2;
-  padding: 25px;
   .ion-github {
     vertical-align: -0.165em;
     margin-left: 8px;
