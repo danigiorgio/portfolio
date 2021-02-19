@@ -2,7 +2,7 @@
   {
     "name": "Evently",
     "description": "A React app for creating and visualizing events, using Json-Server as a full fake REST API to store them.",
-    "tools": "React, Json-Server, Styled Components, React-bootstrap",
+    "tools": "React, Json-Server, Styled Components, React-bootstrap.",
     "img": {
       "src": "../images/evently.png",
       "alt": "evently screenshot"
