@@ -18,7 +18,7 @@
       "src": "../images/around-me.png",
       "alt": "around me screenshot"
     },
-    "url": "https://around-me.now.sh/",
+    "url": "https://around-me.vercel.app/",
     "github": "https://github.com/voirs/around-me"
   },
   {
@@ -40,7 +40,7 @@
       "src": "../images/portfolio.png",
       "alt": "portfolio screenshot"
     },
-    "url": "https://danielagiorgio/",
+    "url": "https://danielagiorgio.com/",
     "github": "https://github.com/voirs/portfolio"
   }
 ]
