@@ -44,7 +44,7 @@ $ yarn global add gatsby-cli
    
 2.  **Run the following commands**
 ```
-$ git clone https://github.com/voirs/portfolio.git
+$ git clone https://github.com/danigiorgio/portfolio.git
 $ cd portfolio
 $ yarn
 $ yarn develop
@@ -70,9 +70,9 @@ $ yarn serve
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome. I always appreciate feedback! <br />
-Feel free to check [issues page](https://github.com/voirs/portfolio/issues) if you want to contribute.<br />
+Feel free to check [issues page](https://github.com/danigiorgio/portfolio/issues) if you want to contribute.<br />
 
 ## 📝 License
 
-Copyright © 2021 [Daniela Giorgio](https://github.com/voirs).<br />
-This repo is [MIT](https://github.com/voirs/portfolio/blob/main/LICENSE) licensed.
+Copyright © 2021 [Daniela Giorgio](https://github.com/danigiorgio).<br />
+This repo is [MIT](https://github.com/danigiorgio/portfolio/blob/main/LICENSE) licensed.
